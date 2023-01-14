@@ -9,21 +9,21 @@ def is_enabled(value, default):
         return default
 
 # Mandatory variables for the bot to start
-API_ID = int(os.environ.get("API_ID", "12124605"))
-API_HASH = os.environ.get("API_HASH", "5cf3577d85fd02286535ec2296934287")
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "5574279873:AAHb22nEOdC2dbwY_9GpU838frtUAvyFoQI")
+API_ID = int(os.environ.get("API_ID", "21369581"))
+API_HASH = os.environ.get("API_HASH", "b2637420cf9b86188f31d10afec58127")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "5799735991:AAGMRZIb09FIrQSjl54Cc6Wk8FXXpFd2XKE")
 DROPLINK_API = os.environ.get("DROPLINK_API")
-MDISK_API = os.environ.get("MDISK_API", "Qu7jX9V0Sn3q1JHdxjPp")
-ADMINS = list(int(i.strip()) for i in os.environ.get("ADMINS").split(",")) if os.environ.get("ADMINS") else []
-DATABASE_NAME = os.environ.get("DATABASE_NAME", "MdiskConvertorBotpro")
-DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://postbot:postbot@cluster0.ouwne8q.mongodb.net/?retryWrites=true&w=majority")
+MDISK_API = os.environ.get("MDISK_API", "RrET4YB5s8cXNoOR2wNN")
+ADMINS = list(int(i.strip()) for i in os.environ.get("ADMINS").split("5035745149")) if os.environ.get("ADMINS") else []
+DATABASE_NAME = os.environ.get("DATABASE_NAME", "MdiskConvertorBot")
+DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://Subhash:99999@cluster0.zlvrmak.mongodb.net/?retryWrites=true&w=majority")
 WEBSITE = os.environ.get('WEBSITE')
 
 #  Optionnal variables
 INCLUDE_DOMAIN = list(i.strip() for i in os.environ.get("INCLUDE_DOMAIN").split(",")) if os.environ.get("INCLUDE_DOMAIN") else []
 EXCLUDE_DOMAIN = list(i.strip() for i in os.environ.get("EXCLUDE_DOMAIN").split(",")) if os.environ.get("EXCLUDE_DOMAIN") else []
 CHANNELS = is_enabled((os.environ.get('CHANNELS', "True")), True)
-CHANNEL_ID = list(int(i.strip()) for i in os.environ.get("CHANNEL_ID").split("-1001806065563")) if os.environ.get("CHANNEL_ID") else []
+CHANNEL_ID = list(int(i.strip()) for i in os.environ.get("CHANNEL_ID").split("-1001827944534")) if os.environ.get("CHANNEL_ID") else []
 FORWARD_MESSAGE = is_enabled((os.environ.get('FORWARD_MESSAGE', "True")), True)
 SOURCE_CODE = os.environ.get("SOURCE_CODE", "https://github.com/CyniteOfficial/Channel-Mdisk-Converter")
 USERNAME = os.environ.get("USERNAME", "CyniteBackup")
